@@ -7,6 +7,7 @@ import { slideIn, staggerContainer, textVariant } from '../utils/motion';
 
 const Hero = () => (
   <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
+    {/* Scroll-triggered animation */}
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -15,6 +16,7 @@ const Hero = () => (
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
       <div className="flex justify-center items-center flex-col relative z-10">
+        {/* Animating h1 property */}
         <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
           Metaverse
         </motion.h1>
